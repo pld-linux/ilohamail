@@ -7,6 +7,7 @@ License:	GPL
 Group:		Applications/Mail
 Source0:	http://dl.sourceforge.net/ilohamail/IlohaMail-%{version}.tar.gz
 # Source0-md5:	60d776d5c326d2a5a675b044c7f5d345
+URL:		http://ilohamail.sourceforge.net/
 Requires:	php
 Requires:	php-gettext
 Requires:	php-imap
