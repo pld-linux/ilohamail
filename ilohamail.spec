@@ -1,4 +1,5 @@
-Summary:	Easy-to-use Webmail
+Summary:	IlohaMail - light-weight yet full featured, easy-to-use webmail
+Summary(pl):	IlohaMail - lekki ale w pe³ni funkcjonalny, ³atwy w u¿yciu webmail
 Name:		ilohamail
 Version:	0.8.10
 Release:	1
@@ -8,26 +9,32 @@ Source0:	http://dl.sourceforge.net/ilohamail/IlohaMail-%{version}.tar.gz
 # Source0-md5:	60d776d5c326d2a5a675b044c7f5d345
 Requires:	php
 Requires:	php-gettext
-Requires:	php-pcre
 Requires:	php-imap
+Requires:	php-pcre
 Requires:	webserver
 Provides:	webmail
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Prefix:		/home/services/httpd/html
 
 %define		_ilohamaildir	/home/services/httpd/html/%{name}
 
 %description
-IlohaMail is an easy-to-use, multilingual mail system
+IlohaMail (pronounced: e-lo-ha-mail) is a light weight yet full
+featured multilingual webmail program that is easy to use and install.
+It runs on a stock build of PHP, and does not require databases
+(although database support is available) or the IMAP library (it is
+powered by a custom IMAP/POP3 library).
+
+%description -l pl
+IlohaMail to lekki ale w pe³ni funkcjonalny, wielojêzyczny, ³atwy w
+u¿yciu i instalacji program webmail. Dzia³a na samym PHP, nie wymaga
+baz danych (chocia¿ dostêpna jest ich obs³uga) ani biblioteki IMAP
+(dzia³a w oparciu o w³asn± bibliotekê IMAP/POP3).
 
 %prep
 %setup -q -n IlohaMail-%{version}
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_ilohamaildir}
 
 cp -a IlohaMail/* $RPM_BUILD_ROOT%{_ilohamaildir}
