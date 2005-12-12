@@ -45,10 +45,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README TODO Manual/* THEMES  UPGRADING RELEASE_NOTES 
+%doc README TODO Manual/* THEMES  UPGRADING RELEASE_NOTES
 %dir %{_ilohamaildir}
 %dir %{_ilohamaildir}/conf
-%config(noreplace) %verify(not size mtime md5) %{_ilohamaildir}/conf/*
+%config(noreplace) %verify(not md5 mtime size) %{_ilohamaildir}/conf/*
 %attr(755,http,http) %{_ilohamaildir}/data
 %{_ilohamaildir}/include
 %{_ilohamaildir}/index.html
