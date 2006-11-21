@@ -2,17 +2,17 @@ Summary:	IlohaMail - light-weight yet full featured, easy-to-use webmail
 Summary(pl):	IlohaMail - lekki ale w pe³ni funkcjonalny, ³atwy w u¿yciu webmail
 Name:		ilohamail
 Version:	0.8.13
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Mail
 Source0:	http://dl.sourceforge.net/ilohamail/IlohaMail-%{version}.tar.gz
 # Source0-md5:	491f1a7e9ab3a5e34c006c9693ef6406
 URL:		http://ilohamail.sourceforge.net/
-Requires:	php
-Requires:	php-gettext
-Requires:	php-imap
-Requires:	php-pcre
+Requires:	php(gettext)
+Requires:	php(imap)
+Requires:	php(pcre)
 Requires:	webserver
+Requires:	webserver(php)
 Provides:	webmail
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
