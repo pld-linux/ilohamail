@@ -1,5 +1,5 @@
 Summary:	IlohaMail - light-weight yet full featured, easy-to-use webmail
-Summary(pl):	IlohaMail - lekki ale w pe≥ni funkcjonalny, ≥atwy w uøyciu webmail
+Summary(pl.UTF-8):   IlohaMail - lekki ale w pe≈Çni funkcjonalny, ≈Çatwy w u≈ºyciu webmail
 Name:		ilohamail
 Version:	0.8.13
 Release:	2
@@ -25,11 +25,11 @@ It runs on a stock build of PHP, and does not require databases
 (although database support is available) or the IMAP library (it is
 powered by a custom IMAP/POP3 library).
 
-%description -l pl
-IlohaMail to lekki ale w pe≥ni funkcjonalny, wielojÍzyczny, ≥atwy w
-uøyciu i instalacji program webmail. Dzia≥a na samym PHP, nie wymaga
-baz danych (chociaø dostÍpna jest ich obs≥uga) ani biblioteki IMAP
-(dzia≥a w oparciu o w≥asn± bibliotekÍ IMAP/POP3).
+%description -l pl.UTF-8
+IlohaMail to lekki ale w pe≈Çni funkcjonalny, wielojƒôzyczny, ≈Çatwy w
+u≈ºyciu i instalacji program webmail. Dzia≈Ça na samym PHP, nie wymaga
+baz danych (chocia≈º dostƒôpna jest ich obs≈Çuga) ani biblioteki IMAP
+(dzia≈Ça w oparciu o w≈ÇasnƒÖ bibliotekƒô IMAP/POP3).
 
 %prep
 %setup -q -n IlohaMail-%{version}
