@@ -1,5 +1,5 @@
 Summary:	IlohaMail - light-weight yet full featured, easy-to-use webmail
-Summary(pl.UTF-8):   IlohaMail - lekki ale w pełni funkcjonalny, łatwy w użyciu webmail
+Summary(pl.UTF-8):	IlohaMail - lekki ale w pełni funkcjonalny, łatwy w użyciu webmail
 Name:		ilohamail
 Version:	0.8.13
 Release:	2
